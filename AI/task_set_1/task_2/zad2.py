@@ -3,7 +3,7 @@ with open("polskie_slowa.txt", encoding="utf-8") as f:
     for line in f:
         POLISH_WORDS.add(line.strip())
 TADEUSZ_LINES:list[str]=[]
-with open("pan_tadeusz_bez_spacji.txt", encoding="utf-8") as f:
+with open("zad2_input.txt", encoding="utf-8") as f:
     for line in f:
         TADEUSZ_LINES += [line]
 
