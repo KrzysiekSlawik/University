@@ -218,7 +218,7 @@ super_blotkarz_deck = [
     Card('9','C')
 ]
 
-print(simulate_game(blotkarz_deck, figuarant_deck, 100))
-print(simulate_game(good_blotkarz_deck, figuarant_deck, 100))
-print(simulate_game(blotkarz_eq_figurant_deck, figuarant_deck, 100))
-print(simulate_game(super_blotkarz_deck, figuarant_deck, 100))
+print(simulate_game(blotkarz_deck, figuarant_deck, 10000))
+print(simulate_game(good_blotkarz_deck, figuarant_deck, 10000))
+print(simulate_game(blotkarz_eq_figurant_deck, figuarant_deck, 10000))
+print(simulate_game(super_blotkarz_deck, figuarant_deck, 10000))
