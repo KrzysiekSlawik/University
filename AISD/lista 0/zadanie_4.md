@@ -49,7 +49,7 @@ Wartość `b` maleje w każdym kroku conajmniej dwukrotnie, (czyli nie mniej ni�
 
 ## jednorodne kryterium kosztów
 ### czas
-Algorytm zwraca wynik, gdy `b^ == 0`, do takiego stanu dochodzi po `log(b)` krokach (wynika wprost z dowodu). Innymi słowy złożoność czasowa to logarytm z długości zapisu `b` w systemie dwójkowym.
+Algorytm zwraca wynik, gdy `b^ == 0`, do takiego stanu dochodzi po `log(b)` krokach (wynika wprost z dowodu). Innymi słowy złożoność czasowa jest równa długości zapisu `b` w systemie dwójkowym.
 ### pamięć
 Algorytm wykorzystuje 3 zmienne całkowitoliczbowe.
 ## logarytmiczne kryterium kosztów
@@ -80,3 +80,9 @@ Sumując wszystko `3 * log(b)^2 + 2 * log(a*b) * log(b)
 `b^` nie przekracza `2*log(b)`  
 `c^` nie przekracza `log(a)+log(b)`
 
+## Obserwacje
+Warto rozważyć wariant algorytmu, w którym:
+```c
+a^ = max(a, b)
+b^ = min(a, b)
+```
